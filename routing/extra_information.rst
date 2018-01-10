@@ -66,7 +66,7 @@ Alternatively, the title could be accessed through the ``Request`` object::
 
     public function indexAction(Request $request, $page)
     {
-        $title = $request->attributes->get('title');
+        $title = $request->query->get('title');
 
         // ...
     }
